@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    // Start Header Section
+    .sticky{
+        padding: 5px 2%; 
+        background-color: white;
+        box-shadow: 1px 2px 8px 2px #888888;
+        .logo{
+            color: black;
+        }
+        nav{
+            .navItems{
+                li{
+                    a{
+                        color: black;
+                    }
+                }
+            }
+        }
+        .logButton{
+            button{
+                color: black;
+                // padding: 9px 25px;
+                background-color: skyblue;
+                border: solid 1.5px skyblue;
+                border-radius: 50px;
+                &:hover{
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+    header{
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 2%;
+        width: 100%;
+        transition: all 0.5s ease 0s;
+        .logo{
+            transition: 0.5s;
+            position: relative;
+            color: white;
+            margin-right: auto;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-style: italic;
+            font-size: 18px;
+        }
+        
+        nav{
+            position: relative;
+            .navItems{
+                list-style: none;
+                li{
+                    transition: 0.5s;
+                    display: inline-block;
+                    padding: 0 30px;
+                    a{
+                        transition: 0.5s;
+                        text-decoration: none;
+                        transition: all 0.3s ease 0s;
+                        color: white;
+                        &:hover{
+                            color: skyblue;
+                        }
+                    }
+                }
+            }
+        }
+
+        .logButton{
+            button{
+                color: white;
+                padding: 7px 25px;
+                background-color: transparent;
+                border: solid 1.5px white;
+                border-radius: 50px;
+                cursor: pointer;
+                transition: all 0.5s ease 0s;
+                &:hover{
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+// End Header Section
+
+// Start Hero Section
+    .hero{
+        background-image: url("../assets/img/hero.jpg");
+        height: 100vh;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-clip: border-box;
+        background-size: cover;
+        .tagline{
+            position: relative;
+            top: 250px;
+            left: auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            h1{
+                width: 100%;
+                font-family: 'Merriweather', serif;
+                text-transform: uppercase;
+                font-weight: 400;
+                text-align: center;
+                font-size: 56px;
+                letter-spacing: 0.2rem;
+                color: white;
+                text-shadow: 3px 2px gray;
+            }
+            .getButton{
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                padding: 10px 0;
+                button{
+                    left: auto;
+                    color: white;
+                    padding: 9px 25px;
+                    background-color: #992e43;
+                    border: none;
+                    border-radius: 50px;
+                    cursor: pointer;
+                    font-size: 18px;
+                    transition: all 0.7s ease 0s;
+                    &:hover{
+                        background-color: rgba($color: #992e43, $alpha: 0.7);
+                    }
+                }
+            }
+        }
+    }
+// End Hero Section
+
+// Start About Section
+
+    .about{
+        width: 90%;
+        height: 100vh;
+        // background-color: cadetblue;
+        overflow: hidden;
+        margin-left: 5%;
+        .slides{
+            width: 500%;
+            display: flex;
+            input{
+                display: none;
+            }
+            .slide{
+                // background-color: chartreuse;
+                width: 20%;
+                height: 100vh;
+                transition: 2s;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .left{
+                    width: 45%;
+                    height: 80%;
+                    // background-color: chocolate;
+                    
+                }
+                .right{
+                    width: 45%;
+                    height: 80%;
+                    display: flex;
+                    align-items: flex-end;
+                    // background-color: red;
+                    .img1{
+                        width: 100%;
+                        height: 100%;
+                        background-image: url("../assets/img/1.jpg");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    .img2{
+                        width: 100%;
+                        height: 100%;
+                        background-image: url("../assets/img/2.jpg");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    .img3{
+                        width: 100%;
+                        height: 100%;
+                        background-image: url("../assets/img/3.jpg");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    .img4{
+                        width: 100%;
+                        height: 100%;
+                        background-image: url("../assets/img/4.jpg");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                }
+            }
+            .navManual{
+                position: absolute;
+                width: 400px;
+                margin-top: 550px;
+                display: flex;
+                padding-left: 30px;
+                .manualbtn{
+                    // background-color: lightgray;
+                    padding: 1px 20px;
+                    border: solid 2px purple;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: 1s;
+                    &:hover{
+                        background-color: purple;
+                        border:solid 2px purple;
+                    }
+                    &:not(:last-child){
+                        margin-right: 15px;
+                    }
+                }
+            }
+            .navAuto{
+                position: absolute;
+                display: flex;
+                width: 800px;
+                padding-left: 30px;
+                margin-top: 550px;
+                div{
+                    // background-color: lightgray;
+                    padding: 1px 20px;
+                    border: solid 2px purple;
+                    border-radius: 10px;
+                    transition: 1s;
+                    &:not(:last-child){
+                        margin-right: 15px;
+                    }
+                }
+            }
+
+            #radio1:checked ~ .first{
+                margin-left: 0;
+            }
+            #radio2:checked ~ .first{
+                margin-left: -20%;
+            }
+            #radio3:checked ~ .first{
+                margin-left: -40%;
+            }
+            #radio4:checked ~ .first{
+                margin-left: -60%;
+            }
+
+            #radio1:checked ~ .navAuto .autobtn1{
+                background-color: purple;
+                border:solid 2px purple;
+            }
+            #radio2:checked ~ .navAuto .autobtn2{
+                background-color: purple;
+                border:solid 2px purple;
+            }
+            #radio3:checked ~ .navAuto .autobtn3{
+                background-color: purple;
+                border:solid 2px purple;
+            }
+            #radio4:checked ~ .navAuto .autobtn4{
+                background-color: purple;
+                border:solid 2px purple;
+            }
+        }
+    }
+
+    // Start Quotes Area
+    .quotesArea{
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        background-color: whitesmoke;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .quotes{
+            display: flex;
+            justify-items: center;
+            flex-direction: column;
+            margin-bottom: 50px;
+            .quotesImg{
+                width: 128px;
+                height: 128px;
+                border: solid 2px lightgray;
+                box-shadow: 2px 2px 2px #888888 ;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                border-radius: 20%;
+                background-clip: content-box;
+                background-image: url("../assets/img/bapak.png");
+            }
+            h4{
+                font-family: "Dancing Script", cursive;
+                font-weight: 600;
+                font-size: 18px;
+            }
+        }
+        h1{
+
+            font-family: "Dancing Script", cursive;
+            font-size: 42px;
+            text-align: center;
+        }
+    }
+    // End Quotes Area
+}
+
+
+// End About Section

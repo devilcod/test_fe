@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Web</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!-- Start Header Section -->
+    <header >
+        <h1 class="logo" data-aos="fade-left">school</h1>
+        <nav data-aos="fade-left">
+            <ul class="navItems" data-aos="fade-left">
+                <li><a href="#">Home</a></li>
+                <li><a href="#1">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="" class="logButton" data-aos="fade-left"><button>Login</button></a>
+    </header>
+
+    <div class="hero">
+        <div class="tagline" data-aos="fade-right">
+            <h1>"an inspired life begins"</h1>
+            <a class="getButton" href="" data-aos="fade-left"><button>Getting Started Now !</button></a>
+        </div>    
+    </div>
+    <!-- End Header Section -->
+
+    <!-- Start About Section -->
+    <div id="1" class="about">
+        <div class="slides">
+            <!-- Start Slide Area -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!-- End Slide Area -->
+
+            <!-- Start About card Area -->
+            <div class="slide first" data-aos="fade-right">
+                <div class="left">
+                    <h3>ABOUT US</h3>
+                    <h2>Explore Our</h2>
+                    <h1>STORY</h1>
+                </div>
+                <div class="right">
+                    <div class="img1"></div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="left">
+                    <h3>ABOUT US</h3>
+                    <h2>Explore Our</h2>
+                    <h1>STORY</h1>
+                </div>
+                <div class="right">
+                    <div class="img2"></div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="left">
+                    <h3>ABOUT US</h3>
+                    <h2>Explore Our</h2>
+                    <h1>STORY</h1>
+                </div>
+                <div class="right">
+                    <div class="img3"></div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="left">
+                    <h3>ABOUT US</h3>
+                    <h2>Explore Our</h2>
+                    <h1>STORY</h1>
+                </div>
+                <div class="right">
+                    <div class="img4"></div>
+                </div>
+            </div>
+            <!-- End About card Area -->
+
+            <!-- Start Nav Autoslide Area -->
+            <div class="navAuto">
+                <div class="autobtn1"></div>
+                <div class="autobtn2"></div>
+                <div class="autobtn3"></div>
+                <div class="autobtn4"></div>
+            </div>
+            <!-- End Nav Autoslide Area -->
+
+            <!-- Start Nav Manualslide Area -->
+            <div class="navManual">
+                <label for="radio1" class="manualbtn"></label>
+                <label for="radio2" class="manualbtn"></label>
+                <label for="radio3" class="manualbtn"></label>
+                <label for="radio4" class="manualbtn"></label>
+            </div>
+            <!-- End Nav Manualslide Area -->
+        </div>
+    </div>
+    <!-- End About Section -->
+
+    <!-- Start Quotes Area -->
+    <div class="quotesArea" >
+        <div class="quotes">
+            <div class="quotesImg" data-aos="fade-left">
+    
+            </div>
+            <h4 data-aos="fade-left">Ki Hajar Dewantara</h4>
+        </div>
+        <h1 data-aos="fade-left">"Jadikan Setiap Tempat Sebagai Sekolah dan jadikan Setiap Orang Menjadi Guru"</h1>
+    </div>
+    <!-- End Quotes Area -->
+
+    <!-- Start Contact Section -->
+    <!-- <div class="contact">
+        
+    </div> -->
+    <!-- End Contact Section -->
+
+    <!-- Start Footer Section -->
+    <!-- End Footer Section -->
+
+    <script>
+        window.addEventListener("scroll",function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+
+        var counter = 1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 4){
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+       AOS.init();
+     </script>
+</body>
+</html>
